@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Web Development Quizzes</title>
+  <link type="text/css" rel="stylesheet" href="stylehome.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Navigation Bar with Icons</h1>
+  <button style="float: right;" onclick="toggleNav()">Open/Close Navigation</button>
+
+<div class="navbar">
+
+  <a href="#" class="navbar__link">
+    <span class="material-icons"> home </span> Home
+  </a>
+
+  <a href="#" class="navbar__link">
+    <span class="material-icons"> calculate </span> Calculator
+  </a>
+
+  <a href="#" class="navbar__link">
+    <span class="material-icons"> assignment </span> Assessment 1
+  </a>
+
+<a href="#" class="navbar__link">
+    <span class="material-icons"> assignment_ind </span> Assessment 2
+  </a>
+
+<a href="#" class="navbar__link">
+    <span class="material-icons"> assignment_turned_in </span> Assessment 3
+  </a>
+
+</div>
+
+<script>
+function toggleNav() {
+  document.querySelector(".navbar").classList.toggle("navbar--open");
+}
+</script>
+
+<script src="main.js"></script>
+</body>
+
+</html>
