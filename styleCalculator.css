@@ -193,7 +193,8 @@ button:hover {
   .operator:focus,
   .operator:active {
     background: var(--grey-200);
-
+    }
+    
   .number {
     background: var(--grey-050);
     }
@@ -202,3 +203,4 @@ button:hover {
   .number:focus,
   .number:active {
     background: var(--grey-200);
+    }
