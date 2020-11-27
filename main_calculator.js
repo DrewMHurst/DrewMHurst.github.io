@@ -32,24 +32,78 @@ keys.addEventListener('click', event => {
   const key = event.target
   const keyValue = key.textContent
   const displayValue = display.textContent
+  const { type } = key.dataset
+  const { previousKeyType } = calculator.dataset
 
 //is this a number key?
-if (key.classList.contains('number')){
+
+if (type === 'number'){
 
   if (displayValue === '0'){
     display.textContent = keyValue
 
+  } else if (previousKeyType === 'operator')
+  {
+    display.textContent = keyValue
   } else {
     display.textContent = displayValue + keyValue
   }
+
 }
 
 //is this an operator key?
-if (key.classList.contains('operator')){
-  console.log(key)
 
-  calculator.dataset.previousKeyType = 'operator'
+if (type === 'operator'){
+const operatorKeys = keys.querySelectorAll('[data-type="operator"]')
+operatorKeys.forEach(el => {el.dataset.state = '' })
+key.dataset.state = 'selected'
+
+// Another way of doing the above is listed here
+// const currentActiveOperator - calculator.querySelector('[data-state="selected"]')
+// if (currentActiveOperator) {
+//  currentActiveOperator.dataset.state = ''
+// }
+
+calculator.dataset.firstNumber = displayValue
+calculator.dataset.operator = key.dataset.key
+
 }
+
+
+//perform a calculation
+if (type === 'equal'){
+
+const firstNumber = calculator.dataset.firstNumber
+const operator = calculator.dataset.operator
+const secondNumber = displayValue
+//console.log(firstNumber, operator, secondNumber)
+display.textContent = calculate(firstNumber, operator, secondNumber)
+
+}
+
+calculator.dataset.previousKeyType = type
+
 })
 
-////////// Testing Script //////////////
+function calculate (firstNumber, operator, secondNumber) {
+  firstNumber = parseInt(firstNumber)
+  secondNumber = parseInt(secondNumber)
+  let result = ''
+   if (operator === 'plus') return firstNumber + secondNumber
+   if (operator === 'minus') return firstNumber - secondNumber
+   if (operator === 'times') return firstNumber * secondNumber
+   if (operator === 'divide') return firstNumber / secondNumber
+  //console.log(result)
+
+
+//for a switch statement
+// switch (operator) {
+//  case 'plus': result = firstNumber + secondNumber; break
+//  case 'minus': result = firstNumber - secondNumber; break
+//  case 'times': result = firstNumber * secondNumber; break
+//  case 'divide': result = firstNumber / secondNumber; break
+//  }
+
+return result.toFixed(2)
+//.toFixed(2) can be used to have rounding for switch
+}

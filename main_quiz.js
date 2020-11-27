@@ -29,5 +29,5 @@ for(var i = 0; i < questions.length; i++){
      }
 }
 
-alert("you got " + score + "/" + questions.length);
+alert("you got " + score / questions.length * 100 + "%" + " correct");
 }

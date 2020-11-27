@@ -127,6 +127,10 @@ button:hover {
     "zero decimal clear equal";
     }
 
+    .calculator_keys > button {
+      border: 0;
+    }
+
   .one {
     grid-area: one;
   }
@@ -185,22 +189,26 @@ button:hover {
     background: var(--orange-500);
   }
 
-  .operator {
+  [data-type="operator"] {
     background: var(--grey-100);
   }
 
-  .operator:hover,
-  .operator:focus,
-  .operator:active {
+  [data-type="operator"]:hover,
+  [data-type="operator"]:focus,
+  [data-type="operator"]:active {
     background: var(--grey-200);
     }
-    
-  .number {
+
+  [data-type="number"] {
     background: var(--grey-050);
     }
 
-  .number:hover,
-  .number:focus,
-  .number:active {
+  [data-type="number"]:hover,
+  [data-type="number"]:focus,
+  [data-type="number"]:active {
     background: var(--grey-200);
     }
+
+  [data-state="selected"] {
+    background: var(--grey-200);
+  }
