@@ -4,6 +4,7 @@
 <head>
   <title>Quiz 1</title>
   <link type="text/css" rel="stylesheet" href="styleQuiz1.css">
+  <link type="text/css" rel="stylesheet" href="styleNavigation.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,31 +16,34 @@
 </head>
 
 <body>
-<button style="float: right;" onclick="toggleNav()">Open/Close Navigation</button>
-  <div class="navbar">
+<!-- Navigation bar Section -->
+<!--<button style="float: right;" onclick="toggleNav()">Open/Close Navigation</button>-->
+<!-- Navigation bar Section -->
+<div class="navbar">
 
-    <a href="#" class="navbar__link">
-      <span class="material-icons"> home </span> Home
-    </a>
+  <a href="index.html" class="navbar__link">
+    <span class="material-icons"> home </span> Home
+  </a>
 
-    <a href="#" class="navbar__link">
-      <span class="material-icons"> calculate </span> Calculator
-    </a>
+  <a href="calculator.html" class="navbar__link">
+    <span class="material-icons"> calculate </span> Calculator
+  </a>
 
-    <a href="#" class="navbar__link">
-      <span class="material-icons"> assignment </span> Assessment 1
-    </a>
+  <a href="quiz1.html" class="navbar__link">
+    <span class="material-icons"> assignment </span> Assessment 1
+  </a>
 
-  <a href="#" class="navbar__link">
-      <span class="material-icons"> assignment_ind </span> Assessment 2
-    </a>
+<a href="quiz2.html" class="navbar__link">
+    <span class="material-icons"> assignment_ind </span> Assessment 2
+  </a>
 
-  <a href="#" class="navbar__link">
-      <span class="material-icons"> assignment_turned_in </span> Assessment 3
-    </a>
+<a href="quiz3.html" class="navbar__link">
+    <span class="material-icons"> assignment_turned_in </span> Assessment 3
+  </a>
 
-  </div>
+</div>
 
+<!-- Quiz Section -->
   <div>
     <h1>Learning Assessment 1</h1>
   </div>
@@ -59,9 +63,9 @@
 </article>
 <script src="main_quiz.js"></script>
 </body>
-<script>
+<!--<script>
 function toggleNav() {
   document.querySelector(".navbar").classList.toggle("navbar--open");
 }
-</script>
+</script>-->
 </html>

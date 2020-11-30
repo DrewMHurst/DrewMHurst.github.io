@@ -4,6 +4,7 @@
 <head>
   <title>Calculator</title>
   <link type="text/css" rel="stylesheet" href="styleCalculator.css">
+  <link type="text/css" rel="stylesheet" href="styleNavigation.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,7 +16,31 @@
 </head>
 
 <body>
+<!-- Navigation bar Section -->
+  <div class="navbar">
 
+    <a href="index.html" class="navbar__link">
+      <span class="material-icons"> home </span> Home
+    </a>
+
+    <a href="calculator.html" class="navbar__link">
+      <span class="material-icons"> calculate </span> Calculator
+    </a>
+
+    <a href="quiz1.html" class="navbar__link">
+      <span class="material-icons"> assignment </span> Assessment 1
+    </a>
+
+  <a href="quiz2.html" class="navbar__link">
+      <span class="material-icons"> assignment_ind </span> Assessment 2
+    </a>
+
+  <a href="quiz3.html" class="navbar__link">
+      <span class="material-icons"> assignment_turned_in </span> Assessment 3
+    </a>
+
+  </div>
+<!-- Calculator Section -->
 <div class="container">
   <div class="calculator">
     <div class="calculator_display">0</div>
@@ -25,19 +50,19 @@
       <button data-type="operator" data-key="times">&times;</button>
       <button data-type="operator" data-key="divide">&divide;</button>
       <!--class was replace with data-keys for operators-->
-      <button data-type="number" class="one">1</button>
-      <button data-type="number" class="two">2</button>
-      <button data-type="number" class="three">3</button>
-      <button data-type="number" class="four">4</button>
-      <button data-type="number" class="five">5</button>
-      <button data-type="number" class="six">6</button>
-      <button data-type="number" class="seven">7</button>
-      <button data-type="number" class="eight">8</button>
-      <button data-type="number" class="nine">9</button>
-      <button data-type="number" class="zero">0</button>
-      <button data-type="number" class="decimal">.</button>
-      <button data-type="number" class="clear">AC</button>
-      <button data-type="equal" class="equal">=</botton>
+      <button data-type="number" data-key="1">1</button>
+      <button data-type="number" data-key="2">2</button>
+      <button data-type="number" data-key="3">3</button>
+      <button data-type="number" data-key="4">4</button>
+      <button data-type="number" data-key="5">5</button>
+      <button data-type="number" data-key="6">6</button>
+      <button data-type="number" data-key="7">7</button>
+      <button data-type="number" data-key="8">8</button>
+      <button data-type="number" data-key="9">9</button>
+      <button data-type="number" data-key="0">0</button>
+      <button data-type="decimal"class="decimal">.</button>
+      <button data-type="clear" clear="clear">C</button>
+      <button data-type="equal" data-key="equal">=</botton>
     </div>
   </div>
 </div>
