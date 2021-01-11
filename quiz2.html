@@ -1,0 +1,282 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Quiz 1</title>
+  <link type="text/css" rel="stylesheet" href="styleQuiz2.css">
+  <link type="text/css" rel="stylesheet" href="styleNavigation.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- Language Arts Learning Module 1 -->
+<!------------------ Navigation Bar --------------------->
+
+<div class="navbar">
+
+  <a href="index.html" class="navbar__link">
+    <span class="material-icons"> home </span> Home
+  </a>
+
+  <a href="calculator.html" class="navbar__link">
+    <span class="material-icons"> calculate </span> Calculator
+  </a>
+
+  <a href="quiz2.html" class="navbar__link">
+    <span class="material-icons"> assignment </span> Assessment 1
+  </a>
+
+<a href="quiz1.html" class="navbar__link">
+    <span class="material-icons"> assignment_ind </span> Assessment 2
+  </a>
+
+<a href="quiz3.html" class="navbar__link">
+    <span class="material-icons"> assignment_turned_in </span> Assessment 3
+  </a>
+
+</div>
+
+<!-----------Grid Layout-------->
+
+<div class="container-grid">
+
+<!-------- Header --------->
+
+  <header class="section0">
+    <h1>Language Arts</h1>
+    <h1>Learning Module 1</h1>
+  </header>
+
+<!-------- Main Body Section --------->
+
+  <div  class="section1">
+    <div id=next class="border">
+    <h2>Introduction</h2>
+    <p>This learning module will focus on the different parts of speech within the English language. There are eight grammatical parts of speech: <b>nouns</b>, <b>pronouns</b>, <b>verbs</b>, <b>adjectives</b>, <b>prepositions</b>, <b>conjunctions</b>, and <b>interjections</b>.</p>
+    <p>A part of speech is a category to which a word is assigned in a sentence by its syntactic meaning. Each part of speech explains not what the word is, but how it is used. In fact, many words can function as more than one part of speech. Understanding how words function in a sentence, paragraph, and an essay will improve your speaking and writing skills making you an effective communicator.</p>
+    <p>At the end of this module, there is a five question, multiple choice, JavaScript, prompt Quiz that will asses your knowledge in determining the different parts of speech within a sentence. To move to the next section, click the button below.</p>
+  </div>
+  </div>
+
+<!-------- Back and Forward Buttons --------->
+
+  <div class="section2">
+    <span class="buttonspacers"> <button id="previous" type="button" onClick="goBack()">BACK</button> </span> <span class="buttonspacers"> <button id="forward" type="button" onClick="changeText()">NEXT</button> </span>
+  </div>
+
+<!-------- Speech Text Button --------->
+
+  <footer class="section3">
+    <input id="speak" type="button" onclick="textSpeak()" value="Text Speak Button">
+  </footer>
+
+<!-------- Aside Navigation Button --------->
+
+  <aside class="section4">
+    <span> <button onclick="toggleNav()">Open/Close<br>Navigation</button> </span>
+    <noscript>JavaScript MUST be enable for this site to work properly.</noscript>
+  </aside>
+
+<!-------- Navigation Area --------->
+
+  <nav class="section5"> </nav>
+
+<!-- Hidden items will not show on website. Only the articles will be shown in section1 after a click event -->
+  <div class="hidden">
+
+    <article id="introduction">
+      <h2>Introduction</h2>
+      <p>This learning module will focus on the different parts of speech within the English language. There are eight grammatical parts of speech: <b>nouns</b>, <b>pronouns</b>, <b>verbs</b>, <b>adjectives</b>, <b>prepositions</b>, <b>conjunctions</b>, and <b>interjections</b>.</p>
+      <p>A part of speech is a category to which a word is assigned in a sentence by its syntactic meaning. Each part of speech explains not what the word is, but how it is used. In fact, many words can function as more than one part of speech. Understanding how words function in a sentence, paragraph, and an essay will improve your speaking and writing skills making you an effective communicator.</p>
+      <p>At the end of this module, there is a five question, multiple choice, JavaScript, prompt Quiz that will asses your knowledge in determining the different parts of speech within a sentence. To move to the next section, click the button below.</p>
+    </article>
+
+     <article id="noun">
+      <h2>Nouns</h2>
+       <p>A <b>noun</b> names something, such as a person, place, thing, or idea. In essence, everything we can see or talk about is illustrated by a word, and that word is a noun. All nouns can fall into one of two categories: <i>common nouns</i> and <i>proper nouns</i>.</p>
+       <h5>Examples</h5>
+       <ul> <li>I see a <i>boy</i>.</li> <li>Look at those <i>pigs</i>.</li> <li>It is another <i>day</i>.</li> </ul>
+       <p>Proper nouns are specific terms for a person, place, things or ideas.</p>
+       <h5>Examples:</h5>
+       <ul> <li>I see <i>Josh</i>.</li> <li>Look at the <i>Empire State Building</i>.</li> <li>This is <i>Kansas City</i>.</li> <li>Today is <i>Tuesday</i>.</li> </ul>
+       <p>Proper nouns should always be capitalize in a sentence.</p>
+       <p>Nouns can be classified into concrete or abstract.</p>
+       <p>Concrete nouns are everything we can  experience through our five senses (i.e. see, feel, smell, taste, or hear).</p>
+       <h5>Examples:</h5>
+       <ul> <li>I see a bird.</li> <li>I feel a feather.</li> <li>I smell roses.</li> <li>I hear fire works.</li> </ul>
+       <p>Whereas abstract nouns are things we cannot perceive with our five senses. Abstract nouns are ideas.</li>
+       <h5>Examples</h5>
+       <ul> <li>I am <i>sad</i>. </li> <li>He is <i>brave</i>.</li> <li>They will recieve <i>justice</i>.</li> <li>Today is <i>Saturday</i>.</li> </ul>
+       <p>Note: Abstract nouns are rarely proper nouns.</p>
+      </article>
+
+      <article id="pronoun">
+       <h2>Pronouns</h2>
+       <p>A <b>pronoun</b> is a word used in place of a noun. Usually the pronoun substitutes for a specific noun.</p>
+       <h5>Examples</h5>
+       <ul> <li>Susie laughed so hard, milk came out of Susie nose.</li> <li>Susie laughed so hard, milk came out of <i>her</i> nose.</li> </ul>
+       <p>There are seven different types of pronouns: Personal, possessive, reflective, relative, demostrative, indefinite, and interrogative. While there are tens of thousands of nouns, there are only about one hundred pronouns. The table below list the majority of pronouns in the english language.</p>
+       <table>
+         <tr style="background-color: #8097EC"> <th>7 Types of Pronouns</th> </tr>
+         <tr> <td> <strong>Personal pronouns</strong> are short words used to replace proper names of persons, places, things or ideas.</td> </tr>
+         <tr style="background-color: lightblue"> <td>I, We, Me, Us, You, He, She, Him, Her, It, They, Them</td> </tr>
+         <tr> <td> <strong>Possessive pronouns</strong> show possession, ownership or something that belongs to someone or something.</td> </tr>
+         <tr style="background-color: lightblue"> <td>My, Mine, Yours, Ours, Its, His, Her, Theirs</td> </tr>
+         <tr> <td> <strong>Reflexive pronouns</strong> are words that reflex back to person and these words end in “-self” or “selves.”</td> </tr>
+         <tr style="background-color: lightblue"> <td>Myself, Yourself, Himself, Herself, Itself, Ourselves, Yourselves, Themselves</td> </tr>
+         <tr> <td> <strong>Relative pronouns</strong> are words that relate to a noun or another pronoun in the sentence.</td> </tr>
+         <tr style="background-color: lightblue"> <td>Who, Whom, Whose, Which, That</td> </tr>
+         <tr> <td> <strong>Demonstrative pronouns</strong> are words that replace nouns and point to something specific in a sentence.</td> </tr>
+         <tr style="background-color: lightblue"> <td>This, That, These, Those</td> </tr>
+         <tr> <td> <strong>Indefinite pronouns</strong> are words that refer to some person or thing without being specific.</td> </tr>
+         <tr style="background-color: lightblue"> <td>Anybody, Anything, Another, Either, Everybody, Everyone, Neither, Nobody, Others, Somebody, Someone, Something, Whoever</td> </tr>
+         <tr> <td> <strong>Interrogative pronouns</strong> are used when you need to ask questions. To interrogate a person is to ask questions.</td> </tr>
+         <tr style="background-color: lightblue"> <td>Who, Whom, Whose, Which, What</td> </tr>
+       </table>
+      </article>
+
+      <article id="verb">
+       <h2>Verbs</h2>
+       <p>A <b>verb</b> is a word that express action or a state of being. In a sentence, verbs describe what the subject is doing or being.</p>
+       <h5>Examples</h5>
+       <ul> <li>Katlin <i>runs</i> home.</li> <li>Drew <i>found</i> his keys.</li> <li>Run! (In this format the verb, <i>run</i>, is a complete sentence.)</li> </ul>
+       <p>The examples above show the verb as doing some sort of "action," but verbs can also be used to describe a subject state of being in a sentence. These verbs are called <i>Linking verbs</i>; all linking verbs are state of being.</p>
+       <h5>Examples</h5>
+       <ul> <li>I <i>am</i> happy.</li> <li>My name <i>is</i> Mary Jane.</li> <li>We <i>are</i> friends.</li> </ul>
+       <p>In many sentences, verbs work together. In these cases helping verbs are usually followed by a main verbs.</p>
+       <h5>Examples</h5>
+       <ul> <li>I <i>am</i> <i>driving</i> a truck.</li> <li>I <i>did</i> not <i>empty</i> the trash.</li> <li>You <i>ought</i> to <i>be</i> with me. (Title of Al Green's 1972 song.)</.</li> </ul>
+       <p>There are 24 helping verbs in the English language: forms of to have, do and be, which may function as main verbs; and ten modals, which function only as helping verbs. All helping verbs are listed in the table below.</p>
+       <table style="border: 1px solid black">
+         <tr>
+           <th>Linking Verbs</th>
+         </tr>
+         <tr>
+           <td>all forms of to be (Am, Is, Are, Was, Were, Has Been, are Being, might be) and to become</td>
+         </tr>
+         <tr>
+           <th>Helping Verbs</th>
+         </tr>
+         <tr>
+           <td>Forms of to be, have and do: Do, Does, Did, Has, Have, Had, Is, Am, Are, Was, Were, Be, Being, Been</td>
+         </tr>
+         <tr>
+           <td>Ten modals: May,Must, Might, Should, Could, Would, Shall, Will,	Can, Ought</td>
+         </tr>
+       </table>
+      </article>
+
+      <article id="adjective">
+        <h2>Adjectives</h2>
+         <p>An <b>adjective</b> is a word used to describe, or modify, a noun or pronoun.</p>
+         <h5>Examples</h5>
+         <ul> <li>Look at the <i>black</i> sheep.</li> <li>He looks <i>upset</i>.</li> <li>Mike had <i>sixteen</i> candles.</li> </ul>
+         <p>Adjectives can be placed before a noun, which is called and <i>attribute position</i>, or after a noun, which is called a <i>predictive position</i>.</p>
+         <h5>Examples</h5>
+         <ul> <li>This is my <i>broken</i> washing machine.</li> <li>My washing machine is <i>broken</i>.</li> </ul>
+         <p>Another type of adjective are the articles. There are two type of articles: definite and indefinite.</p>
+         <p>The definite article is the word "the." It is used to define that a noun is sppecific.</p>
+         <h5>Examples</h5>
+         <ul> <li>Look at <i>the</i> queen.</li> <li>Can we go to <i>the</i> park?</li> <li>I love <i>the</i> poorly educated.</li> </ul>
+         <p>The indefinite article is the word "a" or "an." It is used to determine that something is non-specific or generic.</p>
+         <h5>Examples</h5>
+         <ul> <li>I am <i>a</i> king.</li> <li>That is <i>an</i> owl.</li> <li>I love <i>the</i> poorly educated.</li> </ul>
+         <p>The indefinite article "a" is used with nouns that start with consonates or consonate sounding nouns, whereas the indefinite article "an" is used with nouns that start with a vowel or vowel sounding nouns.</p>
+         <p>Note: Both definite and indefinite articles always start before the noun they modify.</p>
+       </article>
+
+       <article id="adverb">
+         <h2>Adverb</h2>
+          <p>An <strong>adverbs</strong> is a word used to modify, or qualify, a verb, adjecive or another adverb. In general, adverbs modify everything that is not a noun. Adverbs usually describe how, where or when an action takes place.</p>
+          <h5>Examples</h5>
+          <ul> <li>He grab the rope <em>harshly</em>. (Grab how?)</li> <li>Holly <em>regularly</em> sings at the Holiday Inn. (Sings when?)</li> <li>You can place that <em>here</em>. (Place where?)</li> </ul>
+          <p>Adverbs can be placed before or after the verb they modify, whereas for adjectives they must be placed in front.</p>
+          <h5>Examples</h5>
+          <ul> <li>George is <em>extremely</em> upleasent.</li> <li>They are working <em>effieciently</em>.</li> </ul>
+          <p>Adverbs can also modify other adverbs.</p>
+          <h5>Examples</h5>
+          <ul> <li>She thinks <em>very</em> <i>highly</i> of you. (<i>Very</i> modifies <i>highly</i>, which modifies the verb <i>think</i>.)</li> <li>You can place that <em>over</em> <i>here</i>. (<i>Over</i> is modifying the adverb <i>here</i>.)</li> </ul>
+          <p>The negators <em>not</em> and <em>never</em> are classified as adverbs. A word such as cannot contains the helping verb <i>can</i> and the adverb <i>not</i>. This is also true fore the word <i>can't</i>, which  contains a contracted form of the adverb <i>not<i>.</p>
+        </article>
+
+        <article id="preposition">
+          <h2>Prepositions</h2>
+           <p>A <strong>prepositions</strong> is a word placed before a noun, pronoun and phrase to other words within a sentence. In general, prepositions establishes relationship of how/for what, when or where.</p>
+           <h5>Examples</h5>
+           <ul> <li>This paintbrush is <em>for</em> drawing. (What is this paintbrush used for?)</li> <li> <em>After</em> Susie purchase the red dress, she went home. (When did she purchase the dress?)</li> <li>The box is <em>under</em> the table. (Where is the box?)</li> </ul>
+           <p> <em>Prepositional phrases</em> consist of a preposition and a noun; however, the prepositional phrase is not the subject of a sentence. They can act as nouns, adjectives and adverbs within a sentence.</p>
+           <h5>Examples</h5>
+           <ul> <li>Lilth played the voilin <em>with the grace</em> <em>of an angel</em>. (In this sentece there are 2 prepositional phrases, <i>with the grace</i> and <i>of an angel</i>, both acting as adverbs to modify the verb, <i>played</i>.)</li> </ul>
+           <p>Below is a of some of the prepositional words that are commonly used.</p>
+           <table style="width: 100%;">
+             <tr> <th colspan="3" style="background-color: #8097EC">Some Examples of Prepositions</th> </tr>
+             <tr style="text-align: left;"> <th>How or What of</th> <th>When (time)</th> <th>Where (space)</th> </tr>
+             <tr style="background-color: lightblue"> <td>About</td> <td>After</td> <td>Above</td> </tr>
+             <tr> <td>By</td> <td>Before</td> <td>Below</td> </tr>
+             <tr style="background-color: lightblue"> <td>For</td> <td>At</td> <td>From</td> </tr>
+             <tr> <td>Of</td> <td>On</td> <td>To</td> </tr>
+             <tr style="background-color: lightblue"> <td>With</td> <td>Since</td> <td>In</td> </tr>
+             <tr> <td></td> <td>Until</td> <td>Out</td> </tr>
+           </table>
+           <p>Note: Some prepositional words can be used for both or all 3 relationships (e.g. <i>On</i> or <i>By</i>).</p>
+         </article>
+
+          <article id="conjunction">
+            <h2>Conjunctions</h2>
+             <p> <strong>Conjunctions</strong> join words, phrases, or clauses (both dependent and independent), and they indicate the relation between the elements that are joined. There are three types of conjunctions: coordinating, correlative, and subordinating.</p>
+             <p> <em>Coordinating conjunctions</em> joins elements of equal grammatical rank, such as two verbs, two nouns, two adjectives, two phases, or independent clauses. There are seven coordinating conjunctions: <strong>for</strong>, <strong>and</strong>, <strong>nor</strong>, <strong>but</strong>, <strong>or</strong>, <strong>yet</strong>, and <strong>so</strong>.</p>
+             <h5>Examples</h5>
+             <ul> <li>This paintbrush is <em>for</em> drawing. (What is this paintbrush used for?)</li> <li> <em>After</em> Susie purchase the red dress, she went home. (When did she purchase the dress?)</li> <li>The box is <em>under</em> the table. (Where is the box?)</li> </ul>
+             <p> <em>Subordinating conjunctions</em> are words or phrases that joins a dependent clause with an independent clause. The subordinates can start at the beginning or middle of a sentence.</p>
+             <h5>Examples</h5>
+             <ul> <li><em>Although</em> it is raining, we had fun all day.</li> <li> I paid Larry <em>because</em> I owed him the money.</li> </ul>
+             <p>There are many words and phrases that can be used as subordinating prepositions, but here are a few examples of the most common: <i>Although, After, Before, Because, How, If, Since, When, Whereas</i>.</p>
+             <p><em>Correlative conjunctions</em> work in pairs to join words, phrases, or clauses. The correlative conjunctions are either/or, neither/nor, both/and.</p>
+             <h5>Examples</h5>
+             <ul> <li><em>Either</em> Sammie <em>or</em> Billy have my keys.</li> <li> <em>Neither</em> Sue <em>nor</em> Sara will help you with your homework.</li> </ul>
+           </article>
+
+           <article id="interjection">
+             <h2>Interjections</h2>
+              <p>An <strong>interjection</strong> is a word used to demostrate emotion, feeling or suprise. Interjections are grammatically independent phrase that can stand by themselves, but they are often contained within larger sentences. If by themselves, they are usually followed with an exclamation mark.</p>
+              <h5>Examples</h5>
+              <ul> <li><em>Ahh</em>, that feels great.</li> <li> <em>Congrats</em>!</li> <li> <em>Wow</em>!</li> <li> Well <em>duh</em>!</li> <li><em>Yikes</em> I didn't know that school was today!</li> <li>I lost my wallet, <em>dang</em>!</li></ul>
+              <p>Table below list common e</p>
+              <table style="width: 100%;">
+                <tr> <th colspan="5" style="background-color: #8097EC">Some Examples of Interjections</th> </tr>
+                <tr> <td>Aha</td> <td>Cheers</td> <td>Ha</td> <td>Ouch</td> <td>Woah</td> </tr>
+                <tr style="background-color: lightblue"> <td>Ahh</td> <td>Congrats</td> <td>Hey</td> <td>Please</td> <td>Woops</td> </tr>
+                <tr> <td>Aww</td> <td>Dang</td> <td>Hmmm</td> <td>Shoot</td> <td>Wow</td> </tr>
+                <tr style="background-color: lightblue"> <td>Bam</td> <td>Duh</td> <td>Huh</td> <td>Shucks</td> <td>Yeah</td> </tr>
+                <tr> <td>Blah</td> <td>Eh</td> <td>Nah</td> <td>Uggh</td> <td>Yikes</td> </tr>
+                <tr style="background-color: lightblue"> <td>Boo</td> <td>Gee whiz</td> <td>Oops</td> <td>Waa</td> <td>Yo</td> </tr>
+              </table>
+            </article>
+
+         <article id="quiz">
+           <p>On this page you will take a trivia Javascript Prompt quiz on sciene topics taught in primary school.
+             To begin you must push on the start button below. The quiz will consist of 10 questions.
+             At the end of the quiz you will recieve your score on the Alert screen.</p>
+           <p>Good Luck!</p>
+           <button id="yellow" type="button" onClick="promptMe()">START</button>
+         </article>
+
+  </div>
+</div>
+
+<script src="main_parts_of_speech.js"> </script>
+</body>
+<script>
+function toggleNav() {
+  document.querySelector(".navbar").classList.toggle("navbar--open");
+}
+</script>
+</html>

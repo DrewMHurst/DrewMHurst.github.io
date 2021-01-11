@@ -4,6 +4,7 @@
 <head>
   <title>Web Development Quizzes</title>
   <link type="text/css" rel="stylesheet" href="stylehome.css">
+  <link type="text/css" rel="stylesheet" href="styleNavigation.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <meta charset="UTF-8">
@@ -12,8 +13,11 @@
 
 <body>
 
+<!-------------------------
+Navigation Bar
+--------------------------->
 
-<div class="navbar">
+<div class="navbar" aria-label="main menu">
 
   <a href="index.html" class="navbar__link">
     <span class="material-icons"> home </span> Home
@@ -23,11 +27,11 @@
     <span class="material-icons"> calculate </span> Calculator
   </a>
 
-  <a href="quiz1.html" class="navbar__link">
+  <a href="quiz2.html" class="navbar__link">
     <span class="material-icons"> assignment </span> Assessment 1
   </a>
 
-<a href="quiz2.html" class="navbar__link">
+<a href="quiz1.html" class="navbar__link">
     <span class="material-icons"> assignment_ind </span> Assessment 2
   </a>
 
@@ -37,8 +41,44 @@
 
 </div>
 
-<h1>Navigation Bar with Icons</h1>
-<button style="float: right;" onclick="toggleNav()">Open/Close Navigation</button>
+<!--------------------------
+Grid Layout
+<!-------------------------->
+
+<div class="container-grid">
+
+<header class="section0"></header>
+
+  <div class="section1"> </div>
+
+  <div class="section2">
+
+    <img src="images/Drewmhurst_Logo_Graident_Hex4AFAF5_Outline2.svg" alt="logo image">
+
+    <p>Entrepreneur. Instructor. Designer & Developer</p>
+  </div>
+
+  <div class="section3">
+    <p>This portfolio website is where I show case my design and web development skill-sets. This site has a series of learning modules with assessments based on front-end web development tools (HTML, CSS & JavaScript). If you wish to contact or connect with me, click the icons below.</p>
+  </div>
+
+  <div class="section4" id="socialmedia">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/andrew-hurst-9a272014/" target="_blank"> <img class="social" src='icons/linkedin_45w.png' alt="linkedin" height="45" width="45"></a></li>
+      <li><a href="https://www.linkedin.com/in/andrew-hurst-9a272014/" target="_blank"><img class="social" src='icons/email_icon_3772845_45w.png' alt="email icons png from pngtree.com" height="45" width="45"></a></li>
+      <li><a href="mailto:freelancetechservices@gmail.com&subject=Hello Andrew" target="_blank"><img class="social" src='icons/business_45w.png' alt="email" height="45" width="45"></a></li>
+    </ul>
+  </div>
+
+  <footer class="section5"> </footer>
+
+<aside class="section6">
+<button onclick="toggleNav()">Open/Close<br>Navigation</button>
+<noscript>JavaScript MUST be enable for this site to work properly.</noscript>
+</aside>
+
+<div class="section7"> </div>
+</div>
 
 <script>
 function toggleNav() {
@@ -47,6 +87,7 @@ function toggleNav() {
 </script>
 
 <script src="main.js"></script>
+
 </body>
 
 </html>
