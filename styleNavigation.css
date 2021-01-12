@@ -81,7 +81,7 @@ aside button:active {
   	position: relative;
   	margin: auto;
   	font-size: .8em;
-  	color: mintcream;
+  	color: #FFFFFF;
   	background-color: aqua;
   	background: linear-gradient(to top right, blue, aqua);
   	cursor: pointer;
@@ -140,13 +140,14 @@ aside button:active {
     }
 
 /* hover */
+
     aside button:hover {
-    	background-color: none;
-    	color: none;
-      border: none;
+      background-color: rgb(0, 22, 206);
+    	color: black;
+      border: 1.5px solid white;
     	}
 
     aside button:active {
-      color: none;
+      color: blue;
       }
 }
