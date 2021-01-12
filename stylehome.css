@@ -8,11 +8,11 @@ background-repeat: no-repeat;
 background-position: center center;
 }
 
-/*@font-face {
+@font-face {
   font-family: 'constantia';
   src: url(fonts/Constantia.ttf);
   font-weight: 200;
-  }*/
+  }
 
 /**.navbar {
   font-family: serif;

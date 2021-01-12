@@ -21,7 +21,7 @@ li {
 
 h1 {
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', comic sans ms;
   font-weight: bold;
   }
 
@@ -29,6 +29,12 @@ h2 {
   text-align: center;
 
   }
+
+  @font-face {
+    font-family: 'Comic_Sans_MS';
+    src: url(fonts/Comic Sans MS.ttf);
+    font-weight: 100, 200, 300;
+    }
 
   .flexcontainer {
 
@@ -113,7 +119,7 @@ button:hover {
     letter-spacing: 1px;
     background-color: #FFFFFF;
     box-shadow: 5px 1px 11px darkslategrey;
-    font-family: cursive;
+    font-family: 'Comic Sans MS';
     border-radius: 5%;
     /*overflow: auto; */
     }
