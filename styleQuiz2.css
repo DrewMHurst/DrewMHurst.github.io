@@ -36,6 +36,11 @@ h2 {
     font-weight: 200;
     }
 
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url(fonts/ComicNeue-Regular.ttf);
+    }
+
   .flexcontainer {
 
   	overflow: auto;
@@ -119,7 +124,7 @@ button:hover {
     letter-spacing: 1px;
     background-color: #FFFFFF;
     box-shadow: 5px 1px 11px darkslategrey;
-    font-family: 'Comic Sans MS', Montserrat, sans-serif;
+    font-family: 'Comic Sans MS', Montserrat, Comic Neue;
     border-radius: 5%;
     /*overflow: auto; */
     }
