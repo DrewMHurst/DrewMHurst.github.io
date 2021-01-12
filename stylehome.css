@@ -187,16 +187,17 @@ button:active {
     }
 
   .section2 {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
     font-size: 1rem;
     text-align: center;
     }
-  .section2 img {
-    text-align: center;
-    width: 100%;
-  }
+
 
   .section3 {
-    font-size: 0.75rem;
+    grid-column: 1 / 6;
+    grid-row: 4 / 5;
+    font-size: 0.7rem;
     letter-spacing: 1px;
     text-align: center;
     }
