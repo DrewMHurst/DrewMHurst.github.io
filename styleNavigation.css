@@ -138,4 +138,15 @@ aside button:active {
   aside button::after {
     top: .7rem;
     }
+
+/* hover */
+    aside button:hover {
+    	background-color: none;
+    	color: none;
+      border: none;
+    	}
+
+    aside button:active {
+      color: none;
+      }
 }
