@@ -21,7 +21,7 @@ li {
 
 h1 {
   text-align: center;
-  font-family: 'Permanent Marker', Montserrat, sans-serif;
+  font-family: 'Permanent Marker', montserrat, sans-serif;
   font-weight: bold;
   }
 
@@ -124,7 +124,7 @@ button:hover {
     letter-spacing: 1px;
     background-color: #FFFFFF;
     box-shadow: 5px 1px 11px darkslategrey;
-    font-family: 'Comic Sans MS', Montserrat, Comic Neue;
+    font-family: 'Comic Sans MS', 'Montserrat', 'Comic Neue';
     border-radius: 5%;
     /*overflow: auto; */
     }
