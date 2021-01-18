@@ -53,9 +53,8 @@ aside button {
  	border-radius: 25px;
 	position: absolute;
 	margin: auto;
-	font-size: 1rem
-	color: mintcream;
-	background-color: aqua;
+	/*font-size: 1rem;*/
+	color: #FFFFFF;
 	background: linear-gradient(to top right, blue, aqua);
 	cursor: pointer;
 	}
@@ -82,7 +81,6 @@ aside button:active {
   	margin: auto;
   	font-size: .8em;
   	color: #FFFFFF;
-  	background-color: aqua;
   	background: linear-gradient(to top right, blue, aqua);
   	cursor: pointer;
   	}

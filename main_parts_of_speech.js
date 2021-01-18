@@ -32,7 +32,7 @@ function changeText() {
 
 ////Conditions for click events////
   if (next.innerHTML === cQuiz1.innerHTML) {
-    next.innerHTML != aIntroduction.innerHTML;
+    next.innerHTML != aIntroduction.innerHTML; ////This prevents from going to intro page after quiz////
   }
 
   else if (next.innerHTML === bInterjection.innerHTML) {
@@ -99,7 +99,7 @@ function goBack() {
 
 ////Conditions for click events////
   if (next.innerHTML === aIntroduction.innerHTML) {
-    next.innerHTML != cQuiz1.innerHTML;
+    next.innerHTML != cQuiz1.innerHTML; ////This prevents from going pass intro page////
   }
 
   else if (next.innerHTML === bNoun.innerHTML) {
@@ -148,24 +148,38 @@ function goBack() {
   function promptMe(){
   var questions = [
        {
-            prompt: "What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange",
-            answer: "a"
+            prompt: "For the sentence below, choose which part of speech the uppercase word is.\n \nI bought a BEAUTIFUL dress at the mall.\n \n(a) preposition\n(b) adjective\n(c) noun",
+            answer1: "b",
+            answer2: "B"
        },
        {
-            prompt: "What color are Bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow",
-            answer: "c"
+            prompt: "For the sentence below, choose which part of speech the uppercase word is.\n \nWhat did SHE ask you to do?\n \n(a) conjunction\n(b) preposition\n(c) pronoun",
+            answer1: "c",
+            answer2: "C"
        },
        {
-            prompt: "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue",
-            answer: "a"
+            prompt: "For the sentence below, choose which part of speech the uppercase word is.\n \nI left my shoes UNDER the kitchen table.\n \n(a) adjective\n(b) preposition\n(c) pronoun",
+            answer1: "b",
+            answer2: "B"
+       },
+       {
+            prompt: "For the sentence below, choose which part of speech the uppercase word is.\n \nIf we finish our work QUICKLY we can go to the movies.\n \n(a) adverb\n(b) conjunction\n(c) verb",
+            answer1: "a",
+            answer2: "A"
+       },
+       {
+            prompt: "For the sentence below, choose which part of speech the uppercase word is.\n \nOn Saturdays I WORK from nine to five.\n \n(a) verb\n(b) preposition\n(c) adverb",
+            answer1: "a",
+            answer2: "A"
        }
   ];
 
   var score = 0;
 
-  for(var i = 0; i < questions.length; i++){
+  for (var i = 0; i < questions.length; i++){
        var response = window.prompt(questions[i].prompt);
-       if(response == questions[i].answer){
+       if(response == questions[i].answer1 || response == questions[i].answer2){
+  ////What the "if" statement says is either lowercase answer "or" Uppercase answer////
             score++;
             alert("Correct!");
        } else {

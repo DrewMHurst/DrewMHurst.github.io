@@ -23,7 +23,6 @@
 <!-------------------------
 Navigation Bar
 --------------------------->
-
 <div class="navbar">
 
   <a href="index.html" class="navbar__link">
@@ -49,28 +48,63 @@ Navigation Bar
 </div>
 
 <!-- Quiz Section -->
-  <div>
-    <h1>Language Arts<br>Learning Module 1</h1>
+<!-----------Grid Layout-------->
+
+<div class="container-grid">
+
+<!-------- Header --------->
+
+  <header class="section0">
+    <h1>Mathematics</h1>
+    <h1>Learning Module 1</h1>
+  </header>
+
+<!-------- Main Body Section --------->
+
+  <div  class="section1">
+    <div id=next class="border">
+    <h2>Introduction</h2>
+    <p>This learning module will focus on the different parts of speech within the English language. There are eight grammatical parts of speech: <b>nouns</b>, <b>pronouns</b>, <b>verbs</b>, <b>adjectives</b>, <b>prepositions</b>, <b>conjunctions</b>, and <b>interjections</b>.</p>
+    <p>A part of speech is a category to which a word is assigned in a sentence by its syntactic meaning. Each part of speech explains not what the word is, but how it is used. In fact, many words can function as more than one part of speech. Understanding how words function in a sentence, paragraph, and an essay will improve your speaking and writing skills making you an effective communicator.</p>
+    <p>At the end of this module, there is a five question, multiple choice, JavaScript, prompt Quiz that will asses your knowledge in determining the different parts of speech within a sentence. To move to the next section, click the button below.</p>
+  </div>
   </div>
 
-  <article class="flexcontainer">
+<!-------- Back and Forward Buttons --------->
 
-  <div class="box1">
-    <p>On this page you will take a trivia Javascript Prompt quiz on sciene topics taught in primary school.
-      To begin you must push on the start button below. The quiz will consist of 10 questions.
-      At the end of the quiz you will recieve your score on the Alert screen.</p>
-    <p>Good Luck!</p>
-    </div>
+  <div class="section2">
+    <span class="buttonspacers"> <button id="previous" type="button" onClick="goBack()">BACK</button> </span> <span class="buttonspacers"> <button id="forward" type="button" onClick="changeText()">NEXT</button> </span>
+  </div>
 
+<!-------- Speech Text Button --------->
+
+  <footer class="section3">
+    <input id="speak" type="button" onclick="textSpeak()" value="Text Speak Button">
+  </footer>
+
+<!-------- Aside Navigation Button --------->
+
+  <aside class="section4">
+    <span> <button onclick="toggleNav()">Open/Close<br>Navigation</button> </span>
+    <noscript>JavaScript MUST be enable for this site to work properly.</noscript>
+  </aside>
+
+<!-------- Navigation Area --------->
+
+  <nav class="section5"> </nav>
+
+<!-- Hidden items will not show on website. Only the articles will be shown in section1 after a click event -->
+  <div class="hidden">
+</div>
   <div class="box2">
 <button id="yellow">START</button>
   </div>
 </article>
 <script src="main_quiz.js"></script>
 </body>
-<!--<script>
+<script>
 function toggleNav() {
   document.querySelector(".navbar").classList.toggle("navbar--open");
 }
-</script>-->
+</script>
 </html>

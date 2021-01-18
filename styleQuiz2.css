@@ -41,37 +41,10 @@ h2 {
     src: url(fonts/ComicNeue-Regular.ttf);
     }
 
-  .flexcontainer {
-
-  	overflow: auto;
-  	width: 100%;
-  	text-align: center;
-  	margin: 20px auto;
-  	border: 1px;
-  	display: flex;
-  	flex-direction: column;
-  	flex-wrap: wrap;
-  	}
-    .box1 {
-      width: 300px;
-      margin: auto;
-      padding: 0 20px;
-      overflow: hidden;
-      flex-grow: 1;
-    }
-    .box2 {
-
-      width: 300px;
-      margin: auto;
-      padding: 0 20px;
-      overflow: hidden;
-      flex-grow: 1;
-      text-align: center;
-    }
 
 
 #yellow {
-display: inline-block;
+display: block;
 	width: 125px;
 	height: 75px;
 	border: 1.5px solid black;
