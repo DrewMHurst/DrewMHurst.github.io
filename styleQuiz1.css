@@ -2,19 +2,24 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #5C7DF8;
   background-image: url(./images/Mathematics_Module1.png);
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-position: center center;
-font-size: 16pt;
-}
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 16pt;
+  }
 
+@font-face {
+    font-family: "Atami Stencil Bold";
+    src: url("/fonts/Atami-Stencil-Bold.otf") format("otf");
+    font-weight: 400;
+    }
 
 h1 {
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Righteous', 'Atami Stencil Bold', cursive;
   font-weight: bold;
-  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-width: 0.15px;
   -webkit-text-stroke-color: white;
   }
 
@@ -31,7 +36,7 @@ h1 {
     padding: 0;
     margin: 0 0 20 0;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     letter-spacing: 1.5px;
     line-height: 1rem;
     }
@@ -54,8 +59,6 @@ h1 {
     overflow: hidden;
     }
 
-
-
   .section1 .border {
     height: 29rem;
     margin: 5% 5% 5% 5%;
@@ -64,7 +67,6 @@ h1 {
     border-top-right-radius: 15%;
     border-bottom-left-radius: 15%;
     }
-
 
     .section1 h2 {
       margin: auto;
@@ -92,23 +94,23 @@ h1 {
     letter-spacing: 1px;
     }
 
-.section2 .buttonspacers {
+  .section2 .buttonspacers {
     padding: 0 2rem 0 2rem;
     }
 
-.section2 #previous {
+  .section2 #previous {
     width: 5rem;
-  	height: 2.3rem;
-  	border: 1.5px solid black;
-   	border-radius: 10%;
-  	margin: auto;
-  	font-size: 1rem;
+    height: 2.3rem;
+    border: 1.5px solid black;
+    border-radius: 10%;
+    margin: auto;
+    font-size: 1rem;
     font-weight: bold;
-  	background: linear-gradient(to top right, #f10974, #e5e825);
-  	cursor: pointer;
-  	}
+    background: linear-gradient(to top right, #f10974, #e5e825);
+    cursor: pointer;
+    }
 
-.section2 #forward {
+  .section2 #forward {
     width: 5rem;
     height: 2.3rem;
     border: 1.5px solid black;
@@ -129,7 +131,7 @@ h1 {
     padding-top: 1%;
     }
 
-.section3 #speak {
+  .section3 #speak {
     width: 11rem;
     height: 2rem;
     border: 1.5px solid black;
@@ -155,6 +157,16 @@ h1 {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
     }
+
+  .hidden {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    font-size: 0rem;
+    visibility: hidden;
+    height: 2rem;
+    overflow: hidden;
+    }
+
 
 button:hover {
 	background-color: rgb(0, 22, 206);
