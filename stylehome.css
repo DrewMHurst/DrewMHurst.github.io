@@ -144,14 +144,14 @@ button:active {
 	}
 
 #socialmedia ul li a {
-	padding: 10px 10px;
+	padding: 0;
 	}
 
-#socialmedia ul li a img:hover {
-  width: 4vw;
-  height: 4vw;
-  border: 3px solid white;
-  border-radius: 100%;
+#socialmedia ul li a svg:hover,
+#socialmedia ul li a svg:active {
+  background: #FFFFFF;
+  border-radius: 25%;
+
   }
 
 .section5 {
@@ -175,6 +175,16 @@ button:active {
 
 /**Media Queries**/
 @media only screen and (max-width: 950px) {
+
+  .section4{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
 
 }
 
@@ -218,5 +228,12 @@ button:active {
 
   .section6 {
     margin-top: 10%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .section4 {
+    margin-left: 25%;
+    margin-right: 25%;
     }
 }
