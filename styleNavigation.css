@@ -49,13 +49,16 @@ aside button {
 	font-weight: bold;
 	width: 10vw;
 	height: 50px;
-	border: 1.5px solid black;
+	border: 1.5px solid #595959;
  	border-radius: 25px;
 	position: absolute;
 	margin: auto;
 	outline: none;
 	color: #FFFFFF;
 	background: linear-gradient(to top right, blue, aqua);
+  transform: scale(1);
+  padding: .5em 1.25em;
+  transition: transform ease-in-out 250ms, box-shadow ease-in-out 250ms;
 	cursor: pointer;
 	}
 
@@ -64,10 +67,13 @@ aside button:focus {
 	background-color: rgb(0, 22, 206);
 	color: black;
   border: 1.5px solid white;
+  transform: scale(1.2);
+  box-shadow: 0 6px 6px -12px
 	}
 
 aside button:active {
   color: blue;
+  transform: scale(1.2);
   }
 
 /**Media Queries**/

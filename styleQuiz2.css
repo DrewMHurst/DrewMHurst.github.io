@@ -235,6 +235,10 @@ button:focus {
 }
 
 @media only screen and (max-width: 550px) {
+  body {
+    background-image: url(./images/Language_Arts_Module_Mobile.png);
+    }
+    
   .container-grid {
     display: grid;
     grid-template-columns: 13% 65% 20%;
