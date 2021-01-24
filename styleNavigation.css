@@ -147,11 +147,11 @@ aside button:active {
     top: .6rem;
     }
 
-    aside button:hover,
-    aside button:focus {
-    	background-color: none;
-    	color: none;
-      border: 1.5px solid black;
-    	}
+  aside button:hover,
+  aside button:focus {
+  	background-color: none;
+  	color: none;
+    border: 1.5px solid black;
+  	}
 
 }

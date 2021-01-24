@@ -5,30 +5,21 @@
 ////however, for the below functions to work it can be no more than 12 (+) operators. ////
 ////This is why I am condensing lists and tables.////
 
+
+////Define variables for click functions////
+var aIntroduction = document.getElementById("introduction");
+var bNoun = document.getElementById("noun");
+var bPronoun = document.getElementById("pronoun");
+var bVerb = document.getElementById("verb");
+var bAdjective = document.getElementById("adjective");
+var bAdverb = document.getElementById("adverb");
+var bPreposition = document.getElementById("preposition");
+var bConjunction = document.getElementById("conjunction");
+var bInterjection = document.getElementById("interjection");
+var cQuiz1 = document.getElementById("quiz");
+var next = document.getElementById("next");
+
 function changeText() {
-
-////Define variable for click event////
-  var aIntroduction = document.getElementById("introduction");
-
-  var bNoun = document.getElementById("noun");
-
-  var bPronoun = document.getElementById("pronoun");
-
-  var bVerb = document.getElementById("verb");
-
-  var bAdjective = document.getElementById("adjective");
-
-  var bAdverb = document.getElementById("adverb");
-
-  var bPreposition = document.getElementById("preposition");
-
-  var bConjunction = document.getElementById("conjunction");
-
-  var bInterjection = document.getElementById("interjection");
-
-  var cQuiz1 = document.getElementById("quiz");
-
-  var next = document.getElementById("next");
 
 ////Conditions for click events////
   if (next.innerHTML === cQuiz1.innerHTML) {
@@ -70,32 +61,9 @@ function changeText() {
   else {
     next.innerHTML = bNoun.innerHTML;
   }
-  }
+}
 
 function goBack() {
-
-////Define variable for click event////
-  var aIntroduction = document.getElementById("introduction");
-
-  var bNoun = document.getElementById("noun");
-
-  var bPronoun = document.getElementById("pronoun");
-
-  var bVerb = document.getElementById("verb");
-
-  var bAdjective = document.getElementById("adjective");
-
-  var bAdverb = document.getElementById("adverb");
-
-  var bPreposition = document.getElementById("preposition");
-
-  var bConjunction = document.getElementById("conjunction");
-
-  var bInterjection = document.getElementById("interjection");
-
-  var cQuiz1 = document.getElementById("quiz");
-
-  var next = document.getElementById("next");
 
 ////Conditions for click events////
   if (next.innerHTML === aIntroduction.innerHTML) {
@@ -141,7 +109,7 @@ function goBack() {
   else {
     next.innerHTML = aIntroduction.innerHTML;
   }
-  }
+}
 
 //////////////////JavaScript prompt Quiz////////////////////
 
@@ -195,8 +163,7 @@ function goBack() {
 function textSpeak() {
   var textS = document.getElementById("next");
 
-
- var utterance = new SpeechSynthesisUtterance(textS.innerHTML);
+  var utterance = new SpeechSynthesisUtterance(textS.innerHTML);
 
   speechSynthesis.speak(utterance);
 //var text = new SpeechSynthesisUtterance('Hello World');
