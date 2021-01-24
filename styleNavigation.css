@@ -52,12 +52,12 @@ aside button {
 	border: 1.5px solid #595959;
  	border-radius: 25px;
 	position: absolute;
-	margin: auto;
+	margin: .5em 1.25em;
 	outline: none;
 	color: #FFFFFF;
 	background: linear-gradient(to top right, blue, aqua);
   transform: scale(1);
-  padding: .5em 1.25em;
+  padding: auto;
   transition: transform ease-in-out 250ms, box-shadow ease-in-out 250ms;
 	cursor: pointer;
 	}
@@ -112,9 +112,12 @@ aside button:active {
     border: 1px solid black;
     border-radius: 15%;
     position: relative;
+    padding: auto;
     margin: auto;
     background: -webkit-linear-gradient(bottom left, blue, aqua);
     cursor: pointer;
+    transform: unset;
+    transition: none;
     }
 
   aside button::before,
