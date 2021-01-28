@@ -93,7 +93,7 @@ aside button:active {
   	}
 	}
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
 
   /**aside button {
     opacity: 0.7;

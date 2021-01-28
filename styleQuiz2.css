@@ -21,7 +21,7 @@ li {
 
 h1 {
   text-align: center;
-  font-family: 'Slackey', cursive, sans-serif;
+  font-family: 'Nerko One', cursive, sans-serif;
   font-weight: bold;
   }
 
@@ -82,7 +82,7 @@ button:focus {
     padding: 0;
     margin: 10 0 20 0;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     letter-spacing: 1.5px;
     line-height: 1.5rem;
     }
@@ -217,26 +217,73 @@ button:focus {
 
 /**Media Queries**/
 @media only screen and (max-width: 950px) {
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: 13% 65% 20%;
+    grid-gap: 5px;
+    grid-auto-rows: auto;
+    }
+
   .section0 {
     grid-column: 1 / 4;
     grid-row: 1;
     margin: 20 0 20 0;
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
     letter-spacing: 1.5px;
     line-height: 1rem;
+    }
+
+  .section2 .buttonspacers {
+    padding: 0 2rem 0 2rem;
     }
 
   .section4 {
     grid-column: 3 / 4;
     grid-row: 2 / 5;
     text-align: center;
-    margin: 10% 25% 0 5%;
+    margin: 10% 5% 0 5%;
     }
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
+  body {
+
+    }
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: 13% 65% 20%;
+    grid-gap: 5px;
+    grid-auto-rows: auto;
+    }
+
+  .section0 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    text-align: center;
+    font-size: x-large;
+    line-height: 1.5rem;
+    }
+
+  .section1 {
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 1px;
+    }
+
+  .section4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    text-align: center;
+    margin: 20% 5% 0 5%;
+      }
+
+}
+
+@media only screen and (max-width: 500px) {
   body {
     background-image: url(./images/Language_Arts_Module_Mobile.png);
     }
@@ -252,7 +299,7 @@ button:focus {
     grid-column: 1 / 4;
     grid-row: 1;
     text-align: center;
-    font-size: medium;
+    font-size: larger;
     line-height: 1.5rem;
     }
 
@@ -263,7 +310,7 @@ button:focus {
     }
 
   .section2 .buttonspacers {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 1rem 2rem 1rem;
       }
 
   .section4 {
