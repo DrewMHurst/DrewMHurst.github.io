@@ -161,11 +161,12 @@ function goBack() {
 //////////////////JavaScript Speak Text in Section1////////////////////
 
 function textSpeak() {
-  var textS = document.getElementById("next");
-
-  var utterance = new SpeechSynthesisUtterance(textS.innerHTML);
-
-  speechSynthesis.speak(utterance);
-//var text = new SpeechSynthesisUtterance('Hello World');
-//window.speechSynthesis.speak(utterance).innerHTML;
+//Due to the fact that Section1 has html tags that we don't want the speechSynthesis API to speak out,
+//we must remove the HTML tags and only have it read out the text in a string.
+//To do this we need to use the "replace" method.
+  let textS = document.getElementById("next").innerHTML;
+  let taglessText = textS.replace(/<\/?[^>]+(>|$)/g, "");
+  //The taglessText variable will replace markup tags with blank spaces, so speech doesn't say them.
+  let utterance = new SpeechSynthesisUtterance(taglessText);
+  window.speechSynthesis.speak(utterance);
 }
