@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 637 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-88.5012,-247.923)">
+        <g transform="matrix(1,0,0,1,127.648,94.6264)">
+            <text x="100.659px" y="370.972px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:100px;fill:rgb(255,0,0);">A</text>
+            <text x="217.407px" y="370.972px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:64px;">=</text>
+            <text x="282.566px" y="370.972px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:100px;">√</text>
+            <text x="347.45px" y="370.972px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:100px;fill:rgb(255,0,0);">A</text>
+        </g>
+        <g transform="matrix(1,0,0,1,360.132,194.297)">
+            <text x="100.659px" y="200.585px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:72px;">—</text>
+        </g>
+        <g transform="matrix(1,0,0,1,219.813,191.571)">
+            <text x="75.604px" y="180.073px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:36px;fill:rgb(255,0,0);">k</text>
+            <text x="75.604px" y="217.251px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:36px;fill:rgb(0,0,246);">n</text>
+        </g>
+        <g transform="matrix(1,0,0,1,262.011,186.297)">
+            <text x="34.725px" y="189.304px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:36px;">_</text>
+        </g>
+        <g transform="matrix(1,0,0,1,351.582,227.857)">
+            <text x="75.604px" y="180.073px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:36px;fill:rgb(0,0,246);">n</text>
+        </g>
+        <g transform="matrix(1,0,0,1,92.2308,61.989)">
+            <text x="22.08px" y="203.114px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:24px;">Fractional Exponential</text>
+            <text x="86.076px" y="227.899px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:24px;">Expression</text>
+        </g>
+        <g transform="matrix(1,0,0,1,419.022,63.3077)">
+            <text x="33.463px" y="203.114px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:24px;">Radical Expression</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-32.7363,-73.7582)">
+            <text x="578.477px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:55px;">←</text>
+            <text x="643.479px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;">radical</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-170.176,-129.923)">
+            <text x="571.833px" y="444.786px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,0,246);">index</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-19.7363,-19.7582)">
+            <text x="566.443px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:55px;fill:rgb(255,0,0);">←</text>
+            <text x="631.445px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(255,0,0);">radicand</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-172.132,-99.4505)">
+            <text x="593.942px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:55px;fill:rgb(0,0,246);">↓</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-471.22,-11.7582)">
+            <text x="565.256px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(255,0,0);">base</text>
+            <text x="638.645px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:55px;fill:rgb(255,0,0);">→</text>
+        </g>
+        <g transform="matrix(0.883721,0,0,1.11111,268.946,192.381)">
+            <path d="M72.967,143.143C72.967,136.92 66.615,131.868 58.791,131.868L30.44,131.868C22.616,131.868 16.264,136.92 16.264,143.143L16.264,191.802C16.264,198.025 22.616,203.077 30.44,203.077L58.791,203.077C66.615,203.077 72.967,198.025 72.967,191.802L72.967,143.143Z" style="fill:none;stroke:rgb(0,0,246);stroke-width:2.53px;stroke-dasharray:12.66,15.19,0,0;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-473.714,-96.1319)">
+            <text x="561.117px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,0,246);">exponent</text>
+            <text x="692.894px" y="462.694px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:55px;fill:rgb(0,0,246);">→</text>
+        </g>
+        <g transform="matrix(1,0,0,1,366.549,-133.505)">
+            <text x="159.571px" y="545.348px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:36px;fill:rgb(255,0,0);stroke:rgb(255,0,0);stroke-width:1px;stroke-linecap:butt;stroke-miterlimit:2;">k</text>
+        </g>
+    </g>
+</svg>

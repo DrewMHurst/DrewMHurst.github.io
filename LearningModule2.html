@@ -64,22 +64,22 @@ Navigation Bar
 <!-------- Main Body Section --------->
 
   <div  class="section1">
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
-    <div id=next class="border">
-    <h2 style="margin: 0 0 0 0;">Exponents and Radicals</h2>
-    <h2 style="margin: 0 0 25px 0;">An Introduction to Algebra</h2>
-    <p>This learning module will focus on algebraic exponents and radicals.</p>
-    <p>The algebraic expressions shown below are how expoenents and radicals are written in mathematics:</p>
-      <div id="flexcontainer">
-        <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">exponent</p> $$ c^{k} $$ </div> <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">radical</p> $$\sqrt[k]{c}$$ </div>
-          <p style="font-size: 0.75rem;">where <i><b>c</b></i> represents any number (rational or irration) and <i><b>k</b></i> represents any rational number.</p>
-      </div>
 
-    <p>Having a good understanding of exponents and radicals will prepare you for intermediate levels of algebra. Both of these algebraic expressions have real world applications in fields such as architecture, carpentry and masonry.</p>
-    <p>The prerequisites for this module is a knowledge of arithmetic, fractions, decimals, percentages and a general understanding of an algebraic variable.</p>
-    <p>At the end of this module, there is a five question, timed, multiple choice, JavaScript quiz that will asses your knowledge in determining and solving exponent and radical expressions. To move to the next section, click the "NEXT" button below.</p>
+    <div id=next class="border">
+      <h2 style="margin: 0 0 0 0;">Exponents and Radicals</h2>
+      <h2 style="margin: 0 0 25px 0;">An Introduction to Algebra</h2>
+      <p>(The objective of)This learning module will focus on algebraic exponents and radicals.</p>
+      <p>The algebraic expressions shown below are how exponential and radical expressions are written in mathematics:</p>
+        <div id="flexcontainer">
+          <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">exponential</p> $$ A^{k} $$ </div> <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">radical</p> $$\sqrt[n]{A}$$ </div>
+        </div>
+      <p>Having a good understanding of exponents and radicals will prepare you for intermediate and advanced levels of algebra. Both of these algebraic expressions have real world applications in fields such as architecture, carpentry and masonry.</p>
+      <p>This module will cover how to write, multiply, divide and power exponentials; breifly introduce how to write and calculate radicals; and show the relationship between exponential and radical expressions.</p>
+      <p>The prerequisites for this module is a knowledge of arithmetic, fractions and a general understanding of algebraic variable.</p>
+      <p>At the end of this module, there is a five question, timed, multiple choice, JavaScript quiz that will asses your knowledge in determining and solving exponent and radical expressions. To move to the next section, click the "NEXT" button below.</p>
+      <br>
   </div>
+
   </div>
 
 <!-------- Back and Forward Buttons --------->
@@ -108,6 +108,228 @@ Navigation Bar
 <!-- Hidden items will not show on website. Only the articles will be shown in section1 after a click event -->
   <div class="hidden">
 
+<article id="intro">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+  <h2 style="margin: 0 0 0 0;">Exponents and Radicals</h2>
+  <h2 style="margin: 0 0 25px 0;">An Introduction to Algebra</h2>
+  <p>This learning module will focus on algebraic exponents and radicals.</p>
+  <p>The algebraic expressions shown below are how exponential and radical expressions are written in mathematics:</p>
+    <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">exponential</p> $$ A^{k} $$ </div> <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">radical</p> $$\sqrt[n]{A}$$ </div>
+        <p style="font-size: 0.75rem;">where <i><b>c</b></i> represents any number (rational or irration) and <i><b>k</b></i> represents any rational number.</p>
+    </div>
+  <p>Having a good understanding of exponents and radicals will prepare you for intermediate levels of algebra. Both of these algebraic expressions have real world applications in fields such as architecture, carpentry and masonry.</p>
+  <p>The prerequisites for this module is a knowledge of arithmetic, fractions, decimals, percentages and a general understanding of an algebraic variable.</p>
+  <p>At the end of this module, there is a five question, timed, multiple choice, JavaScript quiz that will asses your knowledge in determining and solving exponent and radical expressions. To move to the next section, click the "NEXT" button below.</p>
+</article>
+
+<article id="exponents">
+  <h2>Understanding Exponents</h2>
+    <p>An exponent refers to how many times a number is multiplied by itself. For example, if the number <b>3</b> is multiplied by itself <b>four</b> times, we would write this as follows:</p>
+    $$3 \times 3 \times 3 \times 3 = 81$$
+    <p>We can rewrite the above expression as <b>3<sup>4</sup></b>, which is the proper math notation for an exponential expression. In this example, <b>4</b> is called the <b>Exponent</b> or <b>Power</b> and <b>3</b> is the <b>Base</b> that is being multiplied by itself four times.</p>
+    <p>Here we have the example <b>3<sup>4</sup></b> represented as our exponential expression, but this holds true for any number whether <b>5<sup>10</sup></b> or <b>500<sup>100</sup></b>. Instead of using specific numbers, lets write an exponential expression with arbitrary values representing any number:</p>
+      <figure>
+        <img src="drewmhurst/images/Mathematics_Exponentials.svg" alt="exponential expression image"><figcaption style="text-align: center; font-size: .8rem;">Where the base, A, and the exponent, k, represents any number.</figcaption>
+      </figure>
+    <p>Let's do more examples:</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ 3^{2} = 3 \times 3 = 9 $$</li> <li>$$ 2^{3} = 2 \times 2  \times 2 = 8 $$</li> <li>$$ 5^{5} = 5 \times 5  \times 5  \times 5  \times 5 = 3,125 $$</li>
+      </ul>
+    <p>Note: All the examples above can be multiply by the number <b>1</b> and not have it change the output value because <b>1</b> act as an <em>identity</em>.</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ 3^{2} = 1 \times 3 \times 3 = 9 $$</li> <li>$$ 2^{3} = 1 \times 2 \times 2  \times 2 = 8 $$</li> <li>$$ 5^{5} = 1 \times 5 \times 5  \times 5  \times 5  \times 5 = 3,125 $$</li>
+      </ul>
+    <p>What if we power a base number to <b>1</b> and <b>0</b>?</p>
+    $$ 2^{1} = 1 \times 2 = 2 $$
+    $$ 2^{0} = 1 = 1 $$
+    <p>Whenever an exponential expression has a <b>1</b> for it's power, it will always be equal to the base number. Subsequently, whenever an exponential expression has a <b>0</b> for it's power, it will always be equal to <b>1</b>.</p>
+      <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.8rem; text-align: center;">Identity Exponent Rule</p>
+      $$ A^{ 1} = A $$ <p style="display: inline;">and</p> $$ A^{ 0} = 1 $$
+      </div>
+      </div>
+    <p style="font-size: 0.8rem; text-align: center;">Where <b>A</b> represents any base number.</p>
+    <p>Zero to the power of zero, <b>0<sup>0</sup></b>, does not have an agreed upon value in mathematics; however for introductory to intermediate algebra, it has been agreed that <b>0<sup>0</sup> = 1</b>.</p>
+</article>
+
+<article id="multiply">
+  <h2>Multiplying Exponents</h2>
+    <p>We can multiply exponential expressions with different numbers.</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ 3 \times  5^{3} = 3 \times 5 \times 5 \times 5 = 375 $$</li> <li>$$ 4^{2} \times  6 = 4 \times 4 \times 6 = 96 $$</li> <li>$$ 2^{4}  \times  3^{2} = 2 \times 2 \times 2 \times 2 \times 3 \times 3 = 144 $$</li>
+      </ul>
+    <p>As stated earlier, we can also write the base number as a variable with letters (or symbols) standing in for numbers.</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ a \times c \times c \times c = a c^{3} $$</li> <li><01></01> b \times b \times a \times a  \times a \times a = b^{2} a^{4} $$</li> <li>$$ a \times a \times b \times b  \times b \times b  \times y = a^{2}b^{4} y $$</li>
+      </ul>
+    <p>When multiplying exponential expressions with the same base, we add the exponents together.</p>
+    <h5>Examples:</h5>
+    <ul>
+      <li>$$ c^{ 8 } c = c^{8} \times c = c^{8+1} = c^{9} $$</li> <li>$$ y^{ 5 } y y =  y^{5+1+1} = y^{7} $$</li> <li>$$ 7^{ 4 } 7^{ 2 } 7 =  7^{4+2+1} = 7^{7} = 823,543 $$</li>
+    </ul>
+    <p>Adding exponents together if they share the same base can be written in the following formula:</p>
+      <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.8rem; text-align: center;">Product Rule</p>
+      $$ A^{ k_{1} }  \times  A^{ k_{2} } =  A^{k_{1}+k_{2}} $$
+      </div>
+      </div>
+    <p style="font-size: 0.8rem; text-align: center;">Where <b>A</b> represents the base number or variable. k<sub>1</sub> and k<sub>2</sub> represent the exponents.</p>
+    <p>Note:k<sub>1</sub> and k<sub>2</sub> can equal each other or zero.</p>
+    <p>What if the bases aren't the same? What do we do in those situations?</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ 4^{2} 7^{3} 4^{3} = ? $$</li> <li>$$ e^{ 3} e^{ 2 } c^{ 4 } = ? $$</li> <li>$$ a^{ 4 } y a y^{ 3 } = ? $$</li> <li>$$ 4X^{ 4 }5b^{ 2 } = ? $$</li>
+      </ul>
+    <p>As stated previously, you only add exponents that have the same base.</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ 4^{2} 7^{3} 4^{3} = 4^{2+3} 7^{3} = 4^{5} \times 7^{3} = 1024 \times 343 = 351,232 $$</li> <li>$$ e^{ 3} e^{ 2 } c^{ 4 } = e^{3+2} c^{4} = e^{5} c^{4} $$</li> <li>$$ a^{ 4 } y a y^{ 3 } = a^{4+1} y^{3+1} = a^{5} y^{4} $$</li> <li>$$ 4X^{ 4 }5 b^{ 2 } = 4 \times 5 X^{ 4 } b^{ 2 } =  20X^{ 4 } b^{ 2 }$$</li>
+      </ul>
+</article>
+
+<article id="dividing">
+  <h2>Division and Negative Exponents</h2>
+    <p>In division, exponents are subtracted from each other provided the base are the same as shown in the examples below:</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ c^{ 4 } \div c^{ 2 } \Longrightarrow \frac{c^{4}}{c^{2}} = \frac{c \times c \times \cancel{c \times c}}{\cancel{c \times c}} \Longrightarrow  c^{4-2} = c^{2} $$</li> <li>$$ X^{ 9 } \div X^{ 6 } \Longrightarrow \frac{X^{9}}{X^{6}} = X^{9-6} = X^{3} $$</li> <li>$$ 4^{ 6 } \div  4^{ 5 } = \frac{4^{6}}{4^{5}} = 4^{6-5} = 4^{1} = 4 $$</li> <li>$$ 3 a^{ 3 } \div 5 a = \frac{3 a^{3}}{5 a} = \frac{3}{5}a^{3-1} = \frac{3}{5}a^{2} $$</li>
+      </ul>
+    <p>We can write a general formula for dividing exponents.</p>
+      <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.8rem; width: 100%; text-align: center;">Quotient Rule </p>
+      $$ A^{ k_{1} } \div A^{ k_{2} } = \frac{A^{k_{1}}}{A^{k_{2}}} = A^{k_{1}-k_{2}} $$
+      </div>
+      </div>
+    <p style="font-size: 0.8rem; text-align: center;">Where <b>A</b> represents the base number or variable that is not equal to zero. k<sub>1</sub> and k<sub>2</sub> are exponents.</p>
+    <p>What happens when the denomenator's exponent is greater than the numerator's exponent? The same division formula still applies; the only difference is that the exponent will be negative as shown below:</p>
+    $$ b^{4} \div b^{6} = \frac{b^{4}}{b^{6}} = b^{4-6} = b^{-2} = \frac{1}{ b^{2} } $$
+    <p>Any number or variable with a negative exponent equals its reciprocal with the exponent turned to positive as the formula below shows.</p>
+      <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.8rem; width: 100%; text-align: center;">Negative Exponent Identity</p>
+      $$ A^{-k} = \frac{1}{A^{k}} $$
+      </div>
+      </div>
+    <p style="font-size: 0.8rem; text-align: center;">Where <b>A</b> is not equal to zero.</p>
+    <h5>Examples</h5>
+      <ul>
+        <li>$$ 7^{-2} = \frac{1}{7^{2}} = \frac{1}{49} $$</li> <li>$$ 4^{3} \div 4^{5} = \frac{4^{3}}{4^{5}} = 4^{3-5} = 4^{-2} = \frac{1}{ 4^{2}} =  \frac{1}{16} $$</li> <li>$$ 3 X^{ 7 } \div  6 X^{9} = \frac{3 X^{7}}{6 X^{9}} =kj \frac{1 X^{7}}{2 X^{9}} = \frac{1}{2}X^{7-9} = \frac{1}{2}X^{-2} = \frac{1}{2X^{2}} $$</li>
+      </ul>
+</article>
+
+<article id="powering">
+  <h2>Powering Exponents</h2>
+    <p>In this learning module, we have discussed multiplying and divinding exponents, but what if we were to power and exponential as shown:</p>
+    $$ {(3^{5})}^{3} $$
+    <p>The way to solving these types of problems is to go back to the basic understanding of what an exponent is. An exponent tells us how many times to multiply a <em>number</em> or <em>variable</em> to itself. For this example we need to multiply <b>3<sup>5</sup></b> three times using the exponential <b>product rule</b>.</p>
+    $$ {(3^{5})}^{3} = 3^{5} \times 3^{5} \times 3^{5} = 3^{5+5+5} = 3^{15} $$
+    <p>The answer is <b>3<sup>15</sup></b>, but we could have obtained this answer faster if we just multiply the inner and outer exponents, 3 and 5, together.</p>
+    $$ {(3^{5})}^{3} = 3^{5 \times 3} = 3^{15} $$
+    <p>The <strong>Power rule</strong> for exponents states that when an exponential expression is raised to another exponent, you simply combine the exponents into one by multiplying them.</p>
+      <div id="flexcontainer">
+      <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">Power Rule</p>
+      $$ (A^{k_1})^{k_2} = A^{k_1 \times k_2} $$
+      </div>
+      </div>
+    <p>Where A<sup>k<sub>1</sub></sup> is the exponential expression and k<sub>2</sub> is the exponent.</p>
+    <h5>Examples:</h5>
+      <ul>
+        <li>$$ (X^{ 2 })^{ 7 } = X^{ 2 \times 7 } = X^{ 14 } $$</li>
+        <li>$$ (c^{ 4 })^{ 2 } = c^{ 4 \times 2 } = c^{ 8 } $$</li>
+        <li>$$ ((2t)^{ 5 })^{ 3 } =(2^{ 5 } \times t^{ 5 })^{ 3 } = 2^{ 5 \times 3 } \times t^{ 5 \times 3 } = 2^{ 15 } \times t^{ 15 } = 32,768t^{ 15 } $$</li>
+        <li>$$ ( \frac{a^{3}}{b} )^{ 5 } = ({a}^{3}{b}^{-1})^{5} = {a}^{3 \times 5 }{b}^{-1 \times 5 } = {a}^{ 15 }{b}^{ -5 } =  \frac{a^{15}}{b^{ 5 }} $$</li>
+      </ul>
+</article>
+
+
+<article id="radicals_1">
+  <h2 style="margin: 0 0 0 0;">Introduction to Radicals</h2>
+  <h2 style="margin: 0 0 25px 0;">Part One</h2>
+    <p>Up to now we've only discussed exponents as whole number integers, but exponents can also be fractions and irrational numbers. For example, <b>4<sup>1/2</sup></b>, <b>8<sup>1/3</sup></b>, and <b>16<sup>1/4</sup></b> are all exponential fractions.</p>
+    <p>An integer exponent tells us how many times to multiply a base number whereas a fractional exponent that is less than <b>1</b> tells us to reduce the base number or variable.</p>
+      <h5>Examples:</h5>
+    <ul>
+    <li>$$ 4^{ \frac{1}{2}} $$ <p style="display: inline;">the exponent tells us to reduce the base number, 4, by one half, which equals:</p> $$ \cancel{ 2 } \times 2 = 2 $$</li>
+    <li>$$ 8^{ \frac{1}{3}} $$ <p style="display: inline;">the exponent tells us to reduce the base number, 8, by one third, which equals:</p> $$ \cancel{ 2 } \times \cancel{ 2 } \times 2 = 2 $$</li>
+    <li>$$ 16^{ \frac{1}{4}} $$ <p style="display: inline;">the exponent tells us to reduce the base number, 16, by one fourth, which equals:</p> $$ \cancel{ 2 } \times \cancel{ 2 } \times \cancel{ 2 } \times 2 = 2 $$</li>
+    </ul>
+    <p>The answer,<b>2</b>, is called the root or radical number for all three of these following examples. When an exponent is written a a fraction and we are determining the root of a base, we call the <b><em>fractional exponential</em></b> a <b><em>radical expression</em></b> and write them in a different mathematical form as the image below shows:</p>
+    <figure>
+    <img src="drewmhurst/images/Mathematics_Radicals.svg" alt="radical expression image">
+      <figcaption style="text-align: center; font-size: .8rem;">Where the redicand, A, represents a positive number &ne; 0.</figcaption>
+    </figure>
+    <p>For radical expressions we call the base a <b>radicand</b> and the <b>radical</b> sign indicates that the root will be taken of the radicand. The denominator exponent is called the <b>index</b> and tells to what degree the root will be taken to.</p>
+    <h5>Examples:</h5>
+    <ul>
+      <li>$$ 4^{ \frac{1}{2} } \Rightarrow  \sqrt[2]{4} $$<p style="display: inline;"> square root of 4</p></li>
+      <li>$$ 8^{ \frac{1}{3} } \Rightarrow  \sqrt[3]{8} $$<p style="display: inline;"> cube root of 8</p></li>
+      <li>$$ 16^{ \frac{1}{4} } \Rightarrow  \sqrt[4]{16} $$<p style="display: inline;"></p> fourth root of 16</li>
+    </ul>
+    <p>When writing a radical with a square root, in general, the index number is not included because it is commonly understood.</p>
+    <h5>Examples:</h5>
+    <ul>
+      <li>$$ \sqrt[]{9} =  \sqrt[]{ \cancel{3} \times 3 } = 3 $$</li>
+      <li>$$ \sqrt[]{25} =  \sqrt[]{ \cancel{5} \times 5 } = 5 $$</li>
+      <li>$$  \sqrt[3]{125} =  \sqrt[3]{ \cancel{5} \times \cancel{5} \times 5} = 5 $$</li>
+      <li>$$  \sqrt[3]{64} =  \sqrt[3]{ \cancel{4} \times \cancel{4} \times 4} = 4 $$</li>
+    </ul>
+    <p>All of the examples thus shown have been radicals of integers with perfect squares, cubes or quadrants for their roots, but many integers don't have rational numbers as their roots. For example, the square root of <b>2</b>, <b>3</b> and <b>5</b> are all irrational numbers. For this reason we only show these numbers square roots with the radical sign ( &radic;<span style="text-decoration:overline;">&nbsp;2</span>, &radic;<span style="text-decoration:overline;">&nbsp;3</span> and     &radic;<span    style="text-decoration:overline;">&nbsp;5</span> ) and not as their approximate values, which are 1.41, 1.73 and 2.24 respectively.</p>
+    <p>Although most integer's roots will not be a rational number, many integers will have roots that are the products/multiplications of a rational and irrational number.</p>
+    <h5>Examples:</h5>
+    <ul>
+      <li>$$ \sqrt[]{8} =  \sqrt[]{ 4 \times 2 } = \sqrt[]{(2 \times 2) \times 3} \Rightarrow (2 \times \cancel{2})  \sqrt[]{2} = 2 \sqrt[]{2} $$</li>
+      <li>$$ \sqrt[]{12} =  \sqrt[]{ 4 \times 3 } = \sqrt[]{(2 \times 2) \times 3} \Rightarrow (2 \times \cancel{2})  \sqrt[]{3} = 2 \sqrt[]{3} $$</li>
+      <li>$$ \sqrt[]{32} =  \sqrt[]{ 16 \times 2 } = \sqrt[]{(4 \times 4) \times 2} \Rightarrow (4 \times \cancel{4})  \sqrt[]{2} = 4 \sqrt[]{2} $$</li>
+      <li>$$ \sqrt[]{50} =  \sqrt[]{ 25 \times 2 } = \sqrt[]{(5 \times 5) \times 2} \Rightarrow (5 \times \cancel{5})  \sqrt[]{2} = 5 \sqrt[]{2} $$</li>
+      <li>$$ \sqrt[]{120} =  \sqrt[]{ 4 \times 30 } =\sqrt[]{(2 \times 2) \times 5  \times 6} \Rightarrow (2 \times \cancel{2})  \sqrt[]{5  \times 6} $$</li>
+      <li style="display: inline-block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $$ = 2 \sqrt[]{5  \times 6} = 2 \sqrt[]{30} $$<p style="display: inline;">**</p></li>
+    </ul>
+    <p>To determine square roots of integers, use the factorization process you learned in arthmetic. If more help is needed, use a multiplications table.</p>
+    <hr>
+     <p style="font-size: .8rem;">**Although 30 is a multiple of 5 times 6, it doesn't have a perfect square that is a rational number; therefore, we leave the whole number under the radical sign for simplification.</p>
+    <br>
+</article>
+
+  <article id="radicals_2">
+    <h2 style="margin: 0 0 0 0;">Introduction to Radicals</h2>
+    <h2 style="margin: 0 0 25px 0;">Part Two</h2>
+      <p>What about fractional exponents with numerators greater than 1 or a fraction that is greater than 1? For example, how do we write <b>4<sup>3/2</sup></b> as radical expression and find the root?</p>
+      <h5>Examples:</h5>
+        <ul>
+          <li>$$ 4^{ \frac{3}{2} } =  \sqrt{ 4^{3} } =  \sqrt{4 \times 4 \times 4} = \sqrt{(2 \times 2) (2 \times 2) (2 \times 2)} $$</li>
+          <li style="display: inline-block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$ = (2 \times \cancel{2}) \sqrt{ (2 \times 2) (2 \times 2)} = 2 \times (2 \times \cancel{2}) \sqrt{ (2 \times 2)} $$</li>
+          <li style="display: block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$ = 2 \times 2 \times (2 \times \cancel{2}) = 2 \times 2 \times 2 = 8 $$</li>
+        </ul>
+      <p>As the example above shows, we first mulitply the radicant then we find the root. For radical expressions, the numerator exponent is included with the radicant.</p>
+        <figure>
+          <img src="drewmhurst/images/Mathematics_Radicals2.svg" alt="radical expression image">
+          <figcaption style="text-align: center; font-size: .8rem;">Where the redicand, A<sup>k</sup>, represents a positive number &ne; 0.</figcaption>
+        </figure>
+      <p>Let's do some more examples so you can get a better understanding in how to solve these types of problems.</p>
+      <h5>Examples:</h5>
+        <ul>
+          <li>$$  7^{ \frac{4}{3} } =  \sqrt[3]{ 7^{4} } =  \sqrt[3]{7 \times 7 \times 7 \times 7}  =  \sqrt[3]{(7 \times 7 \times 7) \times 7} $$</li>
+          <li style="display: inline-block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$  = (7 \times \cancel{7} \times \cancel{7}) \sqrt[3]{7} $$</li>
+          <li style="display: block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$  = 7 \sqrt[3]{7} $$</li>
+          <li>$$ 8^{ \frac{2}{3} } =  \sqrt[3]{ 8^{3} } = \sqrt[3]{8 \times 8}  =  \sqrt[3]{(2 \times 2 \times 2)(2 \times 2 \times 2)} $$</li>
+          <li style="display: inline-block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$ = (2 \times \cancel{2} \times \cancel{2}) \sqrt[3]{(2 \times 2 \times 2)} = 2 \times (2 \times \cancel{2} \times \cancel{2}) $$</li>
+          <li style="display: block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; $$ = 2 \times 2 = 4 $$</li>
+          <li>$$ 10^{ \frac{5}{2} } =  \sqrt{ 10^{5} } = \sqrt{ 10 \times 10 \times 10 \times 10 \times 10 } $$</li>
+          <li style="display: inline-block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; &nbsp; $$ = \sqrt{ (10 \times 10) (10 \times 10) \times 10 } = (10 \times \cancel{10}) \sqrt{  (10 \times 10) \times 10 } $$</li>
+          <li style="display: block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; &nbsp; $$ = 10 \times (10 \times \cancel{10}) \sqrt{ 10 } = 10 \times 10 \sqrt{10} $$</li>
+          <li style="display: block; padding: 1% 0 1% 0;"> &nbsp; &nbsp; &nbsp; &nbsp; $$ = 100 \sqrt{ 10 } $$</li>
+        </ul>
+      <br>
+  </article>
+
+<article id="summary">
+<h2>Summary</h2>
+</article>
 
 <!-- Quiz-->
 <article>
@@ -131,11 +353,9 @@ Navigation Bar
 </article>
 
   </div>
-  <div class="box2">
-<button id="yellow">START</button>
-  </div>
-</article>
-<script src="main_quiz.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+<script src="main_math_exponents.js"></script>
 </body>
 <script>
 function toggleNav() {

@@ -18,6 +18,12 @@ h1 {
   -webkit-text-stroke-color: white;
   }
 
+li mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: left !important;
+    margin: 1em 0;
+  }
+
   .container-grid {
     display: grid;
     grid-template-columns: /*repeat(3, 1fr)*/ 17% 63% 15%;
@@ -69,6 +75,7 @@ h1 {
 
     .section1 h5 {
       margin: auto;
+      color: #331ED0
     }
 
     .section1 p {
@@ -79,6 +86,10 @@ h1 {
     .section1 ul {
       margin: auto;
       font-size: 1rem;
+    }
+
+    .section1 li {
+      padding: 1%;
     }
 
     #flexcontainer {
@@ -98,6 +109,22 @@ h1 {
       overflow: hidden;
       flex-grow: 1;
     }
+
+    .flexbox mjx-container[jax="CHTML"][display="true"] {
+     display: inline;
+     padding: 0;
+     overflow: hidden;
+     flex-grow: 1;
+   }
+
+ li mjx-container[jax="CHTML"][display="true"] {
+    display: inline !important;
+    }
+
+   .section1 figure img {
+    width: 50%;
+    margin: 2% 20%;
+   }
 
   .section2 {
     grid-column: 2;
