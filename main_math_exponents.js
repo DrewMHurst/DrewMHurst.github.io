@@ -12,6 +12,7 @@ var introRadicals2 = document.getElementById("radicals_2");
 var summary = document.getElementById("summary");
 var aQuiz1 = document.getElementById("quiz");
 var next = document.getElementById("next");
+var mathJax = document.getElementById("MathJax-script");
 
 function changeText() {
 
@@ -24,12 +25,12 @@ function changeText() {
     next.innerHTML = summary.innerHTML;
   }
 
-  else if (next.innerHTML === introRadicals1.innerHTML) {
+  else if (next.innerHTML === introRadicals1.innerHTML + mathJax.innerHTML) {
     next.innerHTML = introRadicals2.innerHTML;
   }
 
   else if (next.innerHTML === poweringExponents.innerHTML) {
-    next.innerHTML = introRadicals1.innerHTML;
+    next.innerHTML = introRadicals1.innerHTML + mathJax.innerHTML;
   }
 
   else if (next.innerHTML === dividingExponents.innerHTML) {

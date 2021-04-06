@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 </head>
 
 <body>
@@ -65,13 +66,24 @@ Navigation Bar
 
   <div  class="section1">
 
+    <script>
+      MathJax = { tex: { inlineMath: [ ['$$', '$$'], ['\\(', '\\)'] ], } };
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
+
+
     <div id=next class="border">
       <h2 style="margin: 0 0 0 0;">Exponents and Radicals</h2>
       <h2 style="margin: 0 0 25px 0;">An Introduction to Algebra</h2>
       <p>(The objective of)This learning module will focus on algebraic exponents and radicals.</p>
       <p>The algebraic expressions shown below are how exponential and radical expressions are written in mathematics:</p>
         <div id="flexcontainer">
-          <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">exponential</p> $$ A^{k} $$ </div> <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">radical</p> $$\sqrt[n]{A}$$ </div>
+          <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">exponential</p> $$ A^{k} $$ </div> <div class="flexbox"><p style="font-size: 0.75rem; text-align: center;">radical</p> $$ \sqrt[n]{A} $$ </div>
         </div>
       <p>Having a good understanding of exponents and radicals will prepare you for intermediate and advanced levels of algebra. Both of these algebraic expressions have real world applications in fields such as architecture, carpentry and masonry.</p>
       <p>This module will cover how to write, multiply, divide and power exponentials; breifly introduce how to write and calculate radicals; and show the relationship between exponential and radical expressions.</p>
@@ -91,7 +103,7 @@ Navigation Bar
 <!-------- Speech Text Button --------->
 
   <footer class="section3">
-    <input id="speak" type="button" onclick="textSpeak()" value="Text Speak Button">
+    <input id="speak" type="button" onclick="textSpeak()" value="Text Speak Button - Deactivated">
   </footer>
 
 <!-------- Aside Navigation Button --------->
@@ -131,12 +143,12 @@ Navigation Bar
     <p>We can rewrite the above expression as <b>3<sup>4</sup></b>, which is the proper math notation for an exponential expression. In this example, <b>4</b> is called the <b>Exponent</b> or <b>Power</b> and <b>3</b> is the <b>Base</b> that is being multiplied by itself four times.</p>
     <p>Here we have the example <b>3<sup>4</sup></b> represented as our exponential expression, but this holds true for any number whether <b>5<sup>10</sup></b> or <b>500<sup>100</sup></b>. Instead of using specific numbers, lets write an exponential expression with arbitrary values representing any number:</p>
       <figure>
-        <img src="drewmhurst/images/Mathematics_Exponentials.svg" alt="exponential expression image"><figcaption style="text-align: center; font-size: .8rem;">Where the base, A, and the exponent, k, represents any number.</figcaption>
+        <img src="images/Mathematics_Exponentials.svg" alt="exponential expression image"> <figcaption style="text-align: center; font-size: .8rem;">Where the base, A, and the exponent, k, represents any number.</figcaption>
       </figure>
     <p>Let's do more examples:</p>
     <h5>Examples:</h5>
       <ul>
-        <li>$$ 3^{2} = 3 \times 3 = 9 $$</li> <li>$$ 2^{3} = 2 \times 2  \times 2 = 8 $$</li> <li>$$ 5^{5} = 5 \times 5  \times 5  \times 5  \times 5 = 3,125 $$</li>
+        <li> \[ 3^{2} = 3 \times 3 = 9 \] </li> <li>$$ 2^{3} = 2 \times 2  \times 2 = 8 $$</li> <li>$$ 5^{5} = 5 \times 5  \times 5  \times 5  \times 5 = 3,125 $$</li>
       </ul>
     <p>Note: All the examples above can be multiply by the number <b>1</b> and not have it change the output value because <b>1</b> act as an <em>identity</em>.</p>
     <h5>Examples:</h5>
@@ -203,7 +215,8 @@ Navigation Bar
     <p>We can write a general formula for dividing exponents.</p>
       <div id="flexcontainer">
       <div class="flexbox"><p style="font-size: 0.8rem; width: 100%; text-align: center;">Quotient Rule </p>
-      $$ A^{ k_{1} } \div A^{ k_{2} } = \frac{A^{k_{1}}}{A^{k_{2}}} = A^{k_{1}-k_{2}} $$
+      $$ A^{ k_{1} } \div A^{ k_{2} } = \frac{A^{k_{1}}}{A^{k_{2}}} = x^{1}  $$
+      $\[x^2 + y^2 = z^2\]$
       </div>
       </div>
     <p style="font-size: 0.8rem; text-align: center;">Where <b>A</b> represents the base number or variable that is not equal to zero. k<sub>1</sub> and k<sub>2</sub> are exponents.</p>
@@ -260,7 +273,7 @@ Navigation Bar
     </ul>
     <p>The answer,<b>2</b>, is called the root or radical number for all three of these following examples. When an exponent is written a a fraction and we are determining the root of a base, we call the <b><em>fractional exponential</em></b> a <b><em>radical expression</em></b> and write them in a different mathematical form as the image below shows:</p>
     <figure>
-    <img src="drewmhurst/images/Mathematics_Radicals.svg" alt="radical expression image">
+    <img src="images/Mathematics_Radicals.svg" alt="radical expression image">
       <figcaption style="text-align: center; font-size: .8rem;">Where the redicand, A, represents a positive number &ne; 0.</figcaption>
     </figure>
     <p>For radical expressions we call the base a <b>radicand</b> and the <b>radical</b> sign indicates that the root will be taken of the radicand. The denominator exponent is called the <b>index</b> and tells to what degree the root will be taken to.</p>
@@ -307,7 +320,7 @@ Navigation Bar
         </ul>
       <p>As the example above shows, we first mulitply the radicant then we find the root. For radical expressions, the numerator exponent is included with the radicant.</p>
         <figure>
-          <img src="drewmhurst/images/Mathematics_Radicals2.svg" alt="radical expression image">
+          <img src="images/Mathematics_Radicals2.svg" alt="radical expression image">
           <figcaption style="text-align: center; font-size: .8rem;">Where the redicand, A<sup>k</sup>, represents a positive number &ne; 0.</figcaption>
         </figure>
       <p>Let's do some more examples so you can get a better understanding in how to solve these types of problems.</p>
