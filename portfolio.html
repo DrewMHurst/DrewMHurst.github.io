@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>portfolio Page</title>
+<link type="text/css" rel="stylesheet" href="styleNavigation.css">
+<link type="text/css" rel="stylesheet" href="stylePortfolio.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-------------------------
+  Navigation Bar
+  --------------------------->
+
+  <div class="navbar" aria-label="main menu navigation">
+    <a href="index.html" class="navbar__link">
+      <span class="material-icons"> home </span> Home
+    </a>
+    <a href="calculator.html" class="navbar__link">
+      <span class="material-icons"> calculate </span> Calculator
+    </a>
+    <a href="LearningModule1.html" class="navbar__link">
+      <span class="material-icons"> assignment </span> Assessment 1
+    </a>
+    <a href="LearningModule2.html" class="navbar__link">
+      <span class="material-icons"> assignment_ind </span> Assessment 2
+    </a>
+    <a href="LearningModule3.php" class="navbar__link">
+      <span class="material-icons"> assignment_turned_in </span> Assessment 3
+    </a>
+    <a href="portfolio.html" class="navbar__link">
+      <span class="material-icons"> work </span> Projects Done
+    </a>
+  </div>
+
+<!-------- Grid Layout---------------->
+
+<div class="container-grid">
+
+<header class="section0"><h1>Previous Projects Done for Clients<h1/></header>
+
+  <div class="section1">&nbsp</div>
+
+<!-------- Homepage Logo Section --------->
+
+<div class="section2">
+    <img class="photo" src="images/InkedPEMSS 2 Morgan Flyer Version 1_LI.jpg" alt="PEMSS2 Tutor">
+</div>
+
+<!-------- Description Section --------->
+
+<div class="section3">
+  <img class="photo" src="images/InkedPEMSS 2 Morgan Flyer Version 2_LI.jpg" alt="PEMSS2 Camp">
+</div>
+
+<div class="section4">
+  <img class="photo" src="images/InkedCert PEMSS 2 Morgan Version 2_LI.jpg" alt="PEMSS2 Certificate">
+</div>
+
+<!-------- Footer --------->
+  <footer class="section5"> </footer>
+
+  <aside class="section6">
+    <button onclick="toggleNav()" aria-label="Open/Close navigation button">Open/Close<br>Navigation</button>
+    <noscript>JavaScript <strong>MUST</strong> be enable for this site to work properly.</noscript>
+  </aside>
+
+<div class="section7"> </div>
+</div>
+
+ <script>
+ function toggleNav() {
+  document.querySelector(".navbar").classList.toggle("navbar--open");
+  }
+ </script>
+
+
+<script src="main.js">
+</script>
+
+</body>
+</html>
